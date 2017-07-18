@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title: string = 'Switchboard';
+  switches: Array<object> = [{}]
+  constructor(){
+    for (let i = 0; i < 10; ++i){
+      this.switches[i] = {on: false, index: i};
+    }
+  }
+  toggle(index){
+    let thisSwitch = this.switches[index];
+    thisSwitch['on'] ? thisSwitch['on'] = false : thisSwitch['on'] = true;
+    return;
+  }
 }

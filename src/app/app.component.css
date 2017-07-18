@@ -1,0 +1,23 @@
+div{
+  height: 75px;
+  width: 75px;
+  background-color: #784004;
+  display: inline-block;
+  border: 1px solid black;
+  margin: 1px;
+  text-align: center
+}
+button{
+  margin: 10px;
+  width: 55px;
+  height: 55px;
+  vertical-align: middle;
+  font-weight: bold;
+  color: antiquewhite;
+}
+.on{
+  background-color: green;
+}
+.off{
+  background-color: red;
+}
